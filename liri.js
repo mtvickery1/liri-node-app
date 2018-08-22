@@ -86,8 +86,8 @@ if (action === "movie-this") {
     var movie = "Mr.Nobody";
   } else {
     var movie = input.trim();
-    var omdbKey = keys.omdb.apikey;
   };
+  var omdbKey = keys.omdb.apikey;
   var queryURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=" + omdbKey;
   request(queryURL, function (error, response, body) {
     if (error) {
